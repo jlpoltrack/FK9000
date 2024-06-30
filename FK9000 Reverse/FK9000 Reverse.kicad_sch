@@ -1750,6 +1750,17 @@
 		)
 		(uuid "bcc46b13-9d19-4b1b-b006-dabb58c7f885")
 	)
+	(text "The original boards uses four Toshiba TC4053BP Triple SPDT analog switches.\n\nA replacement could be the MC14551B, which would mean only three are needed.\n\n"
+		(exclude_from_sim no)
+		(at 185.42 142.494 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2711dd99-ee80-4b1e-bf56-078aa419d039")
+	)
 	(text "Outputs:\nU1: X, Y, Z\nU2: X, Y\nU3: X, Y, Z\nU5: X, Y\n\n10\n\nU2 Z is Input Only\nU5 Z is Not Used"
 		(exclude_from_sim no)
 		(at 82.804 43.942 0)
@@ -1760,6 +1771,17 @@
 			(justify left)
 		)
 		(uuid "2b70c125-0dc7-4947-8a24-da2e6093de33")
+	)
+	(text "Crude charge circuit gives about 1-10 mA depending on battery voltage \nas USB voltage is typically something like ~4.65 volts.\n\nCutoff should be around 4 volts, so should be fine for Li-ion"
+		(exclude_from_sim no)
+		(at 87.376 126.238 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c14e805-bd1c-47ef-8110-df0044e05856")
 	)
 	(text "Inputs:\nU1: X, Y, Z\nU2: X, Y, Z\nU3: X, Y, Z\nU5: X, Y\n\n11\n\nU2 Z is Input Only\nU5 Z is Not Used"
 		(exclude_from_sim no)
@@ -1782,6 +1804,39 @@
 			(justify left)
 		)
 		(uuid "add9b62f-675e-4114-ba64-4ad5aad77a45")
+	)
+	(text "CPU is Toshiba TMP80C50AP\n512 Bytes RAM\n\n12 Programmable Functions\n14 Bytes per Function\n168 Bytes Total\nStored in Battery Backed RAM in CPU"
+		(exclude_from_sim no)
+		(at 165.1 65.024 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd2a2ff8-0a6d-415b-812a-ec14955a2730")
+	)
+	(text "Columns:\nU1_X\nU1_Y\nU1_Z\nU5_X\nU5_Y\n\nRows:\nU2_Z\nU3_X\nU2_X\nU2_Y\nU3_Z\nU3_Y\n\nPullups on the columns?  Only have to scan 5 pins instead of 6?"
+		(exclude_from_sim no)
+		(at 163.322 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ded87fc5-358d-47af-b7ea-2ab32d97c737")
+	)
+	(text "Line	Key			R/C\nU1_Y	0 Key		Column\nU2_Y	0 Key		Row\nU1_Z	1 Key		Column\nU2_Y	1 Key		Row\nU2_Y	2 Key		Row\nU5_Y	2 Key		Column\nU2_Y	3 Key		Row\nU5_X	3 Key		Column\nU1_Z	4 Key		Column\nU2_X	4 Key		Row\nU2_X	5 Key		Row\nU5_Y	5 Key		Column\nU2_X	6 Key		Row\nU5_X	6 Key		Column\nU1_Y	7 Key		Column\nU3_Z	7 Key		Row\nU1_Z	8 Key		Column\nU3_Z	8 Key		Row\nU3_Z	9 Key		Row\nU5_Y	9 Key		Column\nU2_Z	AC/On		Row\nU5_X	AC/On		Column\nU3_X	Asterisk	Row\nU5_X	Asterisk	Column\nU1_Z	CE			Column\nU2_Z	CE			Row\nU5_X	CE			Column\nU1_X	Delete		Column\nU2_X	Delete		Row\nU2_Y	Divide		Row\nU3_X	Divide		Row\nU5_Y	Divide		Column\nU1_Y	Enter 		Column\nU3_X	Enter 		Row\nU1_Z	M-			Column\nU3_Y	M-			Row\nU1_Z	M+			Column\nU3_X	M+			Row\nU1_X	MC			Column\nU2_Y	MC			Row\nU3_Z	MC			Row\nU3_Z	Minus		Row\nU5_X	Minus		Column\nU1_X	MR			Column\nU3_Y	MR			Row\nU1_Y	Perc		Column\nU3_Y	Perc		Row\nU3_Y	Plus		Row\nU5_X	Plus		Column\nU1_X	Root		Column\nU2_Y	Root		Row"
+		(exclude_from_sim no)
+		(at 240.284 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1817541-6aaf-4986-b47e-3054e032be65")
 	)
 	(label "U1_YCOM"
 		(at 59.69 90.17 0)
